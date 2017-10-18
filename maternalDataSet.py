@@ -6,11 +6,13 @@ import pandas as pd
 import re 
 
 
-inFile = open ("GSM564427_Zebrafish_s1_zv7_final.gff", 'r',)
-inFile.close()
 maternal = pd.read_csv("GSM564427_Zebrafish_s1_zv7_final.gff", sep="\t", header = None )
 
 out_file = open ("maternal_chr1_5", 'w')
+out_file.close()
 
-one = maternal.loc[maternal[0] == 'chr1']
-n
+out_file = open ("nineteen", 'w')
+#one = maternal.loc[maternal[0] == 'chr1']
+nineteen = maternal.loc[maternal[0] == 'chr19']
+nineteen.to_csv("nineteen", sep = "\t", header = None, index = False) 
+out_file.close()
