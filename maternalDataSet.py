@@ -16,3 +16,4 @@ out_file = open ("nineteen", 'w')
 nineteen = maternal.loc[maternal[0] == 'chr19']
 nineteen.to_csv("nineteen", sep = "\t", header = None, index = False) 
 out_file.close()
+#
