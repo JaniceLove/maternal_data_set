@@ -1,0 +1,49 @@
+#maternal data file 
+#Accession number: GSM5664742
+#Code to split large file into smaller files, 5 chromosomes per file 
+
+import pandas as pd 
+import re 
+
+
+maternal = pd.read_csv("GSM564427_Zebrafish_s1_zv7_final.gff", sep="\t", header = None )
+
+out_file = open ("maternal_chr1_5", 'w')
+out_file.close()
+
+out_file = open ("nineteen", 'w')
+
+one = maternal.loc[maternal[0] == 'chr1']
+two = maternal.loc[maternal[0] == 'chr2']
+three = maternal.loc[maternal[0] == 'chr3']
+four = maternal.loc[maternal[0] == 'chr4']
+five = maternal.loc[maternal[0] == 'chr5']
+six = maternal.loc[maternal[0] == 'chr6']
+seven = maternal.loc[maternal[0] == 'chr7']
+eight = maternal.loc[maternal[0] == 'chr8']
+nine = maternal.loc[maternal[0] == 'chr9']
+ten = maternal.loc[maternal[0] == 'chr10']
+eleven = maternal.loc[maternal[0] == 'chr11']
+twelve = maternal.loc[maternal[0] == 'chr12']
+thirteen = maternal.loc[maternal[0] == 'chr13']
+fourteen = maternal.loc[maternal[0] == 'chr14']
+fifteen = maternal.loc[maternal[0] == 'chr15']
+sixteen = maternal.loc[maternal[0] == 'chr16']
+seventeen = maternal.loc[maternal[0] == 'chr17']
+eighteen = maternal.loc[maternal[0] == 'chr18']
+nineteen = maternal.loc[maternal[0] == 'chr19']
+twenty = maternal.loc[maternal[0] == 'chr20']
+twenty1 = maternal.loc[maternal[0] == 'chr21']
+twenty2 = maternal.loc[maternal[0] == 'chr22']
+twenty3 = maternal.loc[maternal[0] == 'chr23']
+twenty4 = maternal.loc[maternal[0] == 'chr24']
+twenty5 = maternal.loc[maternal[0] == 'chr25']
+
+
+
+eighteen.to_csv("eighteen", sep = "\t", header = None, index = False)
+nineteen.to_csv("nineteen", sep = "\t", header = None, index = False)
+
+
+ 
+out_file.close()
