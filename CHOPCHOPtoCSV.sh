@@ -5,4 +5,4 @@
 #Date: Nov. 22, 2017
 #Author: Janice Love
 
-cat $1 | sed 'y/" "/","/' > $2≈
+cat $1 | sed 'y/" "/","/' > $2
