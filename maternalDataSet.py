@@ -1,5 +1,5 @@
 #maternal data file 
-#Accession number: GSM5664742
+#Accession number: GSM564427
 #Code to split large file into smaller files, 5 chromosomes per file 
 
 import pandas as pd 
